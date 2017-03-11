@@ -1,0 +1,17 @@
+<div class="form-container">
+
+  <img src="assets/images/lock.svg" alt="lock">
+
+  <span class="error" *ngIf="error">{{ error }}</span>
+
+  <button (click)="loginFacebook()" id="Facebook">Войти через Facebook</button><br>
+  <button (click)="loginGoogle()" id="Google">Войти через Google</button><br>
+  <button (click)="loginTwitter()" id="Twitter">Войти через Twitter</button><br>
+  <button routerLink="/login-email" id="email">Войти через login/email</button><br>
+
+  <a routerLink="/singup" routerLinkActive="active" class="alc">
+    Нет регистрации? 
+    <strong> Зарегистрируйтесь здесь!</strong>
+  </a>
+
+</div>
