@@ -3,14 +3,14 @@
 
   <h2>Регистрация нового пользователя</h2>
 
-  <span class="error"> {{ error }} </span>
+  <span class="error" *ngIf="error" [@fallIn]="state"> {{ error }} </span>
 
   <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
     
     <input type="text" placeholder="Email адрес" (ngModel)='email' name='email' class="txt" required>
     <input type="password" placeholder="Пароль" (ngModel)='password' name='password' class="txt" required>
     
-    <buton type="submit" [disabled]="!formData.valid" class="basic-btn">Зарегистрироваться</buton>
+    <button type="submit" [disabled]="!formData.valid" class="basic-btn">Зарегистрироваться</button>
     
   </form>
 </div>

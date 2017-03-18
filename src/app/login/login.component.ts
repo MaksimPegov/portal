@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  loginGoogl() {
+  loginGoogle() {
     this.af.auth.login({
       provider: AuthProviders.Google,
       method: AuthMethods.Popup,
