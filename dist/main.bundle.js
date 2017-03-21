@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 156:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112,7 +112,7 @@ var AuthGuard = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(157);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -147,8 +147,8 @@ var EmailComponent = (function () {
                 email: formData.value.email,
                 password: formData.value.password,
             }, {
-                provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AuthProviders */].Password,
-                method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthMethods */].Password,
+                provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthProviders */].Password,
+                method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["e" /* AuthMethods */].Password,
             }).then(function (success) {
                 _this.router.navigate(['/members']);
             }).catch(function (err) {
@@ -166,7 +166,7 @@ var EmailComponent = (function () {
             animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["a" /* moveIn */])(), __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["b" /* fallIn */])()],
             host: { '[@moveIn]': '' }
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
     ], EmailComponent);
     return EmailComponent;
     var _a, _b;
@@ -182,7 +182,7 @@ var EmailComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(157);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -211,8 +211,8 @@ var LoginComponent = (function () {
     LoginComponent.prototype.loginGoogle = function () {
         var _this = this;
         this.af.auth.login({
-            provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AuthProviders */].Google,
-            method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthMethods */].Popup,
+            provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthProviders */].Google,
+            method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["e" /* AuthMethods */].Popup,
         }).then(function (success) {
             _this.router.navigate(['/members']);
         }).catch(function (err) {
@@ -222,8 +222,8 @@ var LoginComponent = (function () {
     LoginComponent.prototype.loginFacebook = function () {
         var _this = this;
         this.af.auth.login({
-            provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AuthProviders */].Facebook,
-            method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthMethods */].Popup,
+            provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthProviders */].Facebook,
+            method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["e" /* AuthMethods */].Popup,
         }).then(function (success) {
             _this.router.navigate(['/members']);
         }).catch(function (err) {
@@ -233,8 +233,8 @@ var LoginComponent = (function () {
     LoginComponent.prototype.loginTwitter = function () {
         var _this = this;
         this.af.auth.login({
-            provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AuthProviders */].Twitter,
-            method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthMethods */].Popup,
+            provider: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["d" /* AuthProviders */].Twitter,
+            method: __WEBPACK_IMPORTED_MODULE_1_angularfire2__["e" /* AuthMethods */].Popup,
         }).then(function (success) {
             _this.router.navigate(['/members']);
         }).catch(function (err) {
@@ -251,7 +251,7 @@ var LoginComponent = (function () {
             animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["a" /* moveIn */])()],
             host: { '[@moveIn]': '' }
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
     ], LoginComponent);
     return LoginComponent;
     var _a, _b;
@@ -267,7 +267,9 @@ var LoginComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MembersComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -278,19 +280,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
 
 
 
 
 var MembersComponent = (function () {
-    function MembersComponent(af, router) {
+    function MembersComponent(af, router, fbApp) {
         var _this = this;
         this.af = af;
         this.router = router;
+        this.fbApp = fbApp;
         this.state = '';
         this.af.auth.subscribe(function (auth) {
             if (auth) {
-                _this.name = auth;
+                _this.auth = auth;
             }
         });
     }
@@ -307,11 +314,12 @@ var MembersComponent = (function () {
             styles: [__webpack_require__(578)],
             animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["a" /* moveIn */])(), __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["b" /* fallIn */])(), __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["c" /* moveInLeft */])()],
             host: { '[@moveIn]': '' }
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
+        }),
+        __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* FirebaseApp */])), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = (_d = typeof __WEBPACK_IMPORTED_MODULE_4_firebase__ !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_firebase__["app"]) && _d.App) === 'function' && _c) || Object])
     ], MembersComponent);
     return MembersComponent;
-    var _a, _b;
+    var _a, _b, _c, _d;
 }());
 //# sourceMappingURL=members.component.js.map
 
@@ -324,7 +332,7 @@ var MembersComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_animations__ = __webpack_require__(157);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -369,7 +377,7 @@ var SignupComponent = (function () {
             animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["a" /* moveIn */])(), __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__router_animations__["b" /* fallIn */])()],
             host: { '[@moveIn]': '' }
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["b" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angularfire2__["c" /* AngularFire */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
     ], SignupComponent);
     return SignupComponent;
     var _a, _b;
@@ -451,7 +459,7 @@ var AppComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(470);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(476);
@@ -718,7 +726,7 @@ module.exports = "<div class=\"form-container\">\n\n  <!--<img src=\"assets/imag
 /***/ 593:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"form-kontaner\" id=\"toolbar\" style=\"margin-left: 15%\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Выйти</button>\n  </header>\n  <div id=\"page\" [@moveInLeft]=\"state\">\n    <h2>Дорбро пожаловать {{ name.auth.displayName }}! </h2>\n    <img src=\"./assets/images/filler.png\">\n  </div>\n</div>"
+module.exports = "<div class=\"form-kontaner\" id=\"toolbar\" style=\"margin-left: 15%\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Выйти</button>\n  </header>\n  <div id=\"page\" [@moveInLeft]=\"state\">\n    <h2>Дорбро пожаловать {{ auth.auth.displayName }}! </h2>\n    <img src=\"./assets/images/filler.png\">\n  </div>\n</div>"
 
 /***/ }),
 
