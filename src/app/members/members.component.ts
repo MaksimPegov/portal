@@ -26,12 +26,15 @@ export class MembersComponent implements OnInit {
       }
     });
   }
+  userData() {
+    this.router.navigateByUrl('/userdata')
+
+  }
 
   logout() {
     this.af.auth.logout();
     this.router.navigateByUrl('/login')
   }
-
   ngOnInit() {
   }
 

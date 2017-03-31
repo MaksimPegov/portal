@@ -1,0 +1,8 @@
+<div class="form-kontaner" id="toolbar" style="margin-left: 15%">
+  <header [@fallIn]="state">
+    <button (click)="logout()" class="basic-btn">Выйти</button>
+  </header>
+  <div id="page" [@moveInLeft]="state">
+    <h4>Заполните данные пользователя {{ auth.auth.displayName }}! </h4>
+    <img src="./assets/images/filler.png">
+  </div>

@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { MembersComponent } from './members/members.component';
 import { AuthGuard } from './auth.service';
 import {routes} from './app.routes';
+import { UserdataComponent } from './userdata/userdata.component';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyBkjiMuF3cCet8-sixMu546Orsw72zRssc",
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     LoginComponent,
     EmailComponent,
     SignupComponent,
-    MembersComponent
+    MembersComponent,
+    UserdataComponent
   ],
   imports: [
     BrowserModule,

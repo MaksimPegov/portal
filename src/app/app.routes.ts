@@ -7,13 +7,15 @@ import { MembersComponent } from './members/members.component';
 import { AuthGuard } from './auth.service';
 import { SignupComponent } from './signup/signup.component';
 import { EmailComponent } from './email/email.component';
+import { UserdataComponent } from './userdata/userdata.component';
 
 export const _routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'login-email', component: EmailComponent },
-    { path: 'members', component: MembersComponent, canActivate: [AuthGuard] }
+    { path: 'members', component: MembersComponent, canActivate: [AuthGuard] },
+    { path: 'userdata', component: UserdataComponent, canActivate: [AuthGuard] }
 
 ]
 
