@@ -637,7 +637,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__app_routes__["a" /* ROUTES */],
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_10__auth_service__["a" /* AuthGuard */]],
-            // providers: [AuthGuard,{provide: LocationStrategy, useClass: HashLocationStrategy}],
+            //providers: [AuthGuard,{provide: LocationStrategy, useClass: HashLocationStrategy}],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
