@@ -634,9 +634,10 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_4_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseConfig),
-                __WEBPACK_IMPORTED_MODULE_11__app_routes__["a" /* routes */],
+                __WEBPACK_IMPORTED_MODULE_11__app_routes__["a" /* ROUTES */],
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_10__auth_service__["a" /* AuthGuard */]],
+            // providers: [AuthGuard,{provide: LocationStrategy, useClass: HashLocationStrategy}],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
@@ -659,7 +660,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__email_email_component__ = __webpack_require__(343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__userdata_userdata_component__ = __webpack_require__(348);
 /* unused harmony export _routes */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ROUTES; });
 
 
 
@@ -675,7 +676,7 @@ var _routes = [
     { path: 'members', component: __WEBPACK_IMPORTED_MODULE_2__members_members_component__["a" /* MembersComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__auth_service__["a" /* AuthGuard */]] },
     { path: 'userdata', component: __WEBPACK_IMPORTED_MODULE_6__userdata_userdata_component__["a" /* UserdataComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__auth_service__["a" /* AuthGuard */]] }
 ];
-var routes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule */].forRoot(_routes);
+var ROUTES = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule */].forRoot(_routes);
 //# sourceMappingURL=app.routes.js.map
 
 /***/ }),
