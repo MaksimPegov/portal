@@ -1,9 +1,9 @@
 import { Component, OnInit, HostBinding, Inject } from '@angular/core';
-import { AngularFire, AuthProviders, AuthMethods, FirebaseApp } from 'angularfire2';
+import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import { Router } from '@angular/router';
 import { moveIn, fallIn, moveInLeft } from '../router.animations';
-import * as firebase from "firebase";
-
+import { User } from '../user.model';
+import { KeysPipe, LoginProviders } from '../enums';
 
 @Component({
   selector: 'app-userdata',
@@ -13,14 +13,30 @@ import * as firebase from "firebase";
   host: {'[@moveIn]': ''}
 })
 export class UserdataComponent implements OnInit {
+
   auth: any;
   state: string = '';
   error: any;
-  constructor(public af: AngularFire, private router: Router, @Inject(FirebaseApp) private fbApp: firebase.app.App) {
+  user: User;
+  providers = LoginProviders;
+  
+  constructor(public af: AngularFire, private router: Router) {
     this.af.auth.subscribe(auth => { 
       if(auth) this.auth = auth;  
     });
+    // Если в БД есть такой пользователь, загрузить его данные
+    // Если в БД нет, то создать нового 
+  }
+  btnSave(){
+
+  }
+  logout() {
+    this.af.auth.logout();
+    this.router.navigateByUrl('/login')
   }
   ngOnInit() {
+  }
+  back(){
+    this.router.navigate(['/members']);
   }
 }

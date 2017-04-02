@@ -11,7 +11,7 @@ import { MembersComponent } from './members/members.component';
 import { AuthGuard } from './auth.service';
 import {routes} from './app.routes';
 import { UserdataComponent } from './userdata/userdata.component';
-
+import { SharedModule } from './shared.module'
 export const firebaseConfig = {
     apiKey: "AIzaSyBkjiMuF3cCet8-sixMu546Orsw72zRssc",
     authDomain: "schoolportal-dd443.firebaseapp.com",
@@ -27,9 +27,10 @@ export const firebaseConfig = {
     EmailComponent,
     SignupComponent,
     MembersComponent,
-    UserdataComponent
+    UserdataComponent,
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     FormsModule,
     HttpModule,
